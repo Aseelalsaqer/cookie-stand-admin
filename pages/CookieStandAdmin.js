@@ -1,21 +1,21 @@
-import React from "react";
-import Head from "next/head";
-import Header from "./Header";
-import Footer from "./Footer";
-import Main from "./Main"
+import Head from 'next/head'
+import Header from '../components/Header'
+import Main from '../components/Main'
+export default function CookieStandAdmin() {
 
-export default function Home() {
-  
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen ">
+    <div className="bg-green-50">
+      
       <Head>
         <title>Cookie Stand Admin</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      <Main/>
 
-      <Footer/>
+      <Header />
+
+      <Main />
+
+
     </div>
-  );
+  )
 }
