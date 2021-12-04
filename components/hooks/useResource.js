@@ -1,7 +1,7 @@
 import axios from 'axios'
 import useSWR from 'swr'
 export const apiUrl = "https://cookie-stand-rest.herokuapp.com/api/v1/cookie_stands/";
-import { useAuth } from '../context/auth'
+import { useAuth } from '../components/context/auth'
 export default function useResource() {
     const { tokens, logout } = useAuth()
     const { data, error, mutate } = useSWR([apiUrl, tokens], fetchResource);
