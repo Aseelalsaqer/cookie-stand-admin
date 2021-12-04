@@ -4,7 +4,7 @@ import Main from '../components/Main'
 import Footer from '../components/Footer'
 import { useAuth } from '../components/context/auth'
 import LoginForm from './LoginForm'
-export default function CookieStandAdmin() {
+ function CookieStandAdmin() {
   const { user, login, logout } = useAuth();
   return (
     <div className="bg-green-50">
@@ -17,10 +17,12 @@ export default function CookieStandAdmin() {
       <Header />
 
       <Main />
-      {user? <Main /> : <LoginForm/> }
+      {/* {user? <Main /> : <LoginForm/> } */}
       <Footer/>
 
 
     </div>
   )
 }
+
+export default CookieStandAdmin
