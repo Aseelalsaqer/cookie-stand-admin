@@ -1,10 +1,26 @@
+import Head from 'next/head'
+import { useState } from 'react'
+import CookieStandAdmin from '../components/cookiestandadmin'
+import { useAuth } from '../contexts/auth'
+import useResource from '../hooks/useResource'
 
-import CookieStandAdmin  from "./CookieStandAdmin";
+export default function Home() {
+  const [CookiesInformation, CookiesInformationHandler] = useState([])
 
-export default function index() {
+  function EventHandler(e) {
+    e.preventDefault();
+    let my_object = {
+      'location': e.target.location.value,
+      'minCustomers': e.target.maxCust.value,
+      'maxCustomers': e.target.minCust.value,
+      'avgCookies': e.target.avg.value,
+    }
+    console.log('hello');
+    CookiesInformationHandler([...CookiesInformation, my_object]);
+
+  }
+
   return (
-    <div>
-      <CookieStandAdmin />
-    </div>
-  );
+    <CookieStandAdmin EventHandler={EventHandler} CookiesInformation={CookiesInformation}/>
+  )
 }
