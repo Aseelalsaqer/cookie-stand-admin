@@ -1,6 +1,7 @@
 # Live Url : https://aseelalsaqer.github.io/cookie-stand-admin/
 # PR Link Lab38 : https://github.com/Aseelalsaqer/cookie-stand-admin/pull/1
-
+# PR Link Lab38 : https://github.com/Aseelalsaqer/cookie-stand-admin/pull/2
+# Deployed Link : https://cookie-stand-admin-7qgz0zu4h-aseelalsaqer.vercel.app/
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
