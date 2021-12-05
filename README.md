@@ -1,5 +1,4 @@
 # Live Url : https://aseelalsaqer.github.io/cookie-stand-admin/
-# PR Link Lab38 : https://github.com/Aseelalsaqer/cookie-stand-admin/pull/1
 
 # Next.js + Tailwind CSS Example
 
