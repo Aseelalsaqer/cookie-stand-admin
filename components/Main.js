@@ -17,7 +17,7 @@ import LoginForm from './LoginForm'
       <Header />
 
       <Main />
-      {/* {user? <Main /> : <LoginForm/> } */}
+      {user? <Main /> : <LoginForm/> }
       <Footer/>
 
 
